@@ -28,7 +28,7 @@ The following goals were completed:
 
 Here are some possible additions that can be added to our project:
 
-* **Heatmap interactivity** -add more interactivity to heatmaps to allow the graphs to display selcted counties
+* **Heatmap interactivity** -add more interactivity to heatmaps to allow the graphs to display selected counties
 * **Real-time public transit data** - possibly adding a fuctionality to pull realtime public transit data in georgia using MARTA(Georgia public transit) API key
 * **SIR model** - Continue to add realistic data into the model to predict how likely what areas in atlanta may need more resources
 
