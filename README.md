@@ -1,6 +1,6 @@
 # Project  - *Covid Population Disparities*
 
-**Covid Population Disparities** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
+**Covid Population Disparities** We created a semi-interactive dashboard using jupyter notebook with the created notebook we were able to host it using *Voila* on a local host
 
 Submitted by: **Abdul Mohammed, Vanessa Shogreen, Tyshawn Farell, Zyhan Archibald**
 
@@ -16,3 +16,12 @@ The following goals were completed:
 * [X] Complete **SRI** modeling using Python
 * [X] Create **Heatmap** framework using **Jupyter Notebook**
 * [ ] Create and deploy **Dashboard** containing **SRI model** , **HeatMaps** , **Normalized data scatterplots**
+## Walkthrough
+
+
+## Possible Additions
+
+Here are some possible additions that can be added to our dashboard:
+
+* **Heatmap interactivity** -add more interactivity to heatmaps to allow the graphs to display selcted counties
+*
