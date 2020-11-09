@@ -7,6 +7,9 @@ Submitted by: **Abdul Mohammed, Vanessa Shogreen, Tyshawn Farell, Zyhan Archibal
 ## Introduction
 **Covid-19**-COVID-19 (coronavirus disease 2019) is a viral infectious disease caused by SARS-CoV-2 and is currently a World Health Organization (WHO) declared pandemic. As of September 2020, over 30 million people had been infected globally with over 1 million deaths
 
+## Data Sources
+* Atlanta county geojson data: https://opendata.atlantaregional.com/datasets/53ca7db14b8f4a9193c1883247886459_67
+* Georgia Department of Health Covid-19 data:https://dph.georgia.gov/covid-19-daily-status-report
 ## Goals
 
 The following goals were completed:
@@ -15,9 +18,11 @@ The following goals were completed:
 * [X] Merge datasets together
 * [X] Complete **SRI** modeling using Python
 * [X] Create **Heatmap** framework using **Jupyter Notebook**
-* [ ] Create  **Dashboard** containing **SRI model** , **Heatmap** , **Normalized data scatterplots**
+* [X] Create  **VScode file** containing **SRI model** , **Heatmap** , **Normalized data scatterplots**
 ## Walkthrough
-
+* **SRI model**-
+* **Heatmap** - Generate choropleth map using georgia county FIPS codes displaying Covid-19 Deaths heatmap, Covid-19 Cases heatmap, Population heatmap, and Average Household income heatmap
+* **Normalized data scatterplots**- 
 
 ## Possible Additions
 
