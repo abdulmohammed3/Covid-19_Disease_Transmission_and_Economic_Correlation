@@ -31,17 +31,30 @@ sir_total = 0
 
 data = pd.read_csv("covid_confirmed_Atlanta.csv")
 county_names = data[1:11]['County Name']
-res = []
+county_names_array = []
+county_cases_array = []
+county_dates_array = []
+county_and_case = {}
 column_len = len(data.columns)
 hope = data.columns.get_loc("10/31/2020")
 for (columnName, columnData) in data.iteritems():
-    if data.columns.get_loc(columnName) == hope:
+    if data.columns.get_loc(columnName) >= hope:
         #print(f"Column Name: {columnName}")
-        county_and_case = (columnName, columnData[1:11])
-        res.append(county_and_case)
-#print(res)
-#print(res[0][0])
-#print(res[0][1][:11])
+        county_and_case[columnName] = columnData[1:11]
+
+for key, value in county_and_case.items():
+    county_dates_array.append(key)
+    for val in value:
+        county_cases_array.append(val)
+
+for name in county_names:
+    county_names_array.append(name)
+
+# print(county_names_array)
+# print(county_cases_array)
+# print(county_dates_array)
+print(county_and_case)
+
 for i in range(N):
     temp_sus = (-b) * sus * infected * t # Equation 1 delta S first run
     temp_recovered = k * infected * t # Equation 2
@@ -68,7 +81,7 @@ for i in range(N):
     time_list.append(i * t)
     death_list.append(death)
 
-
+"""
 plt.clf() # clear plot
 plt.plot(time_list, temp_sus_list,label="Sus") # x and y axis w/ label
 plt.plot(time_list, np.array(temp_recovered_list) - np.array(death_list),label="Recovered") # x and y axis w / label
@@ -84,3 +97,8 @@ plt.legend() # Legend for given labels
 plt.title('Georgia Coronavirus Cases') # Set up title
 # Display the figure.
 plt.show() # Displays plot
+"""
+plt.clf()
+plt.xlabel('Dates')
+plt.ylabel('Cases')
+plt.show()
