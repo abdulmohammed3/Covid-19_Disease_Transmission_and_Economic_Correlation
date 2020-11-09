@@ -17,6 +17,8 @@ overload_death_rate = 0.75 # overlimit death rate
 infected_limit = 0.1 # infection limit
 #***********END OF USER BLOCK*************
 #*****************************************
+
+# Variables & Arrays
 temp_sus = 0 
 temp_death = 0
 temp_death_rate = 0
@@ -29,6 +31,7 @@ time_list = [0]
 death_list = [death]
 sir_total = 0
 
+# Getting & Splitting Data
 data = pd.read_csv("covid_confirmed_Atlanta.csv")
 county_names = data[1:11]['County Name']
 county_names_array = []
@@ -50,11 +53,14 @@ for key, value in county_and_case.items():
 for name in county_names:
     county_names_array.append(name)
 
-# print(county_names_array)
-# print(county_cases_array)
-# print(county_dates_array)
-print(county_and_case)
+#Displaying Data
+#print(county_names_array) 
+#print(county_cases_array)
+#print(county_dates_array) # 7
+#print(county_cases_array[::10])
+#print(county_and_case)
 
+# SIR Model
 for i in range(N):
     temp_sus = (-b) * sus * infected * t # Equation 1 delta S first run
     temp_recovered = k * infected * t # Equation 2
@@ -81,6 +87,7 @@ for i in range(N):
     time_list.append(i * t)
     death_list.append(death)
 
+# Plotting Data
 """
 plt.clf() # clear plot
 plt.plot(time_list, temp_sus_list,label="Sus") # x and y axis w/ label
@@ -98,7 +105,10 @@ plt.title('Georgia Coronavirus Cases') # Set up title
 # Display the figure.
 plt.show() # Displays plot
 """
+
+# Attempt To Implement Real Data
 plt.clf()
 plt.xlabel('Dates')
 plt.ylabel('Cases')
+plt.legend()
 plt.show()
