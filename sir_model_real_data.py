@@ -29,6 +29,19 @@ time_list = [0]
 death_list = [death]
 sir_total = 0
 
+data = pd.read_csv("covid_confirmed_Atlanta.csv")
+county_names = data[1:11]['County Name']
+res = []
+column_len = len(data.columns)
+hope = data.columns.get_loc("10/31/2020")
+for (columnName, columnData) in data.iteritems():
+    if data.columns.get_loc(columnName) == hope:
+        #print(f"Column Name: {columnName}")
+        county_and_case = (columnName, columnData[1:11])
+        res.append(county_and_case)
+#print(res)
+#print(res[0][0])
+#print(res[0][1][:11])
 for i in range(N):
     temp_sus = (-b) * sus * infected * t # Equation 1 delta S first run
     temp_recovered = k * infected * t # Equation 2
@@ -54,6 +67,7 @@ for i in range(N):
     infected_list.append(infected)
     time_list.append(i * t)
     death_list.append(death)
+
 
 plt.clf() # clear plot
 plt.plot(time_list, temp_sus_list,label="Sus") # x and y axis w/ label
