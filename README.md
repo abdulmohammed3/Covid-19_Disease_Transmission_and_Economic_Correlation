@@ -15,7 +15,7 @@ The following goals were completed:
 * [X] Merge datasets together
 * [X] Complete **SRI** modeling using Python
 * [X] Create **Heatmap** framework using **Jupyter Notebook**
-* [ ] Create and deploy **Dashboard** containing **SRI model** , **HeatMaps** , **Normalized data scatterplots**
+* [ ] Create and deploy **Dashboard** containing **SRI model** and **Normalized data scatterplots**
 ## Walkthrough
 
 
