@@ -26,7 +26,7 @@ The following goals were completed:
 
 ## Possible Additions
 
-Here are some possible additions that can be added to our dashboard:
+Here are some possible additions that can be added to our project:
 
 * **Heatmap interactivity** -add more interactivity to heatmaps to allow the graphs to display selcted counties
 * **Real-time public transit data** - possibly adding a fuctionality to pull realtime public transit data in georgia using MARTA(Georgia public transit) API key
