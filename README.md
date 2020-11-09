@@ -18,7 +18,7 @@ The following goals were completed:
 * [X] Merge datasets together
 * [X] Complete **SIR** modeling using Python
 * [X] Create **Heatmap** framework using **Jupyter Notebook**
-* [X] Create  **VScode file** containing **SRI model** , **Heatmap** , **Normalized data scatterplots**
+* [X] Create  **VScode file** containing **SIR model** , **Heatmap** , **Normalized data scatterplots**
 ## Walkthrough
 * **SIR model**- Model to show the spread of disease
 * **Heatmap** - Generate choropleth map using georgia county FIPS codes displaying Covid-19 Deaths heatmap, Covid-19 Cases heatmap, Population heatmap, and Average Household income heatmap
