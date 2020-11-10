@@ -2,7 +2,7 @@
 
 **Covid Population Disparities** We created a semi-interactive dashboard using jupyter notebook with the created notebook we were able to host it using *Voila* on a local host
 
-Submitted by: **Abdul Mohammed, Vanessa Shogreen, Tyshawn Farell, Zyhan Archibald**
+Submitted by: **Abdul Mohammed, Vanessa Shogreen, Tyshawn Ferrell, Zyhan Archibald**
 
 ## Introduction
 **Covid-19**-COVID-19 (coronavirus disease 2019) is a viral infectious disease caused by SARS-CoV-2 and is currently a World Health Organization (WHO) declared pandemic. As of September 2020, over 30 million people had been infected globally with over 1 million deaths
